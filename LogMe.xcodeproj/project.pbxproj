@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041525C4194A0642003FDD7A /* AddClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041525C3194A0642003FDD7A /* AddClientViewController.m */; };
+		041525C7194A065B003FDD7A /* AddClientPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041525C6194A065B003FDD7A /* AddClientPageController.m */; };
+		041525CA194A0890003FDD7A /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 041525C9194A0890003FDD7A /* Client.m */; };
+		041525CD194A08A2003FDD7A /* ClientList.m in Sources */ = {isa = PBXBuildFile; fileRef = 041525CC194A08A2003FDD7A /* ClientList.m */; };
+		041525D0194A08B1003FDD7A /* WorkLogList.m in Sources */ = {isa = PBXBuildFile; fileRef = 041525CF194A08B1003FDD7A /* WorkLogList.m */; };
+		041CB32D194A00D000E72850 /* ClientPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CB32C194A00D000E72850 /* ClientPageViewController.m */; };
+		041CB331194A01A000E72850 /* ClientPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CB330194A01A000E72850 /* ClientPageController.m */; };
+		043383411948A859003819EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043383401948A859003819EB /* main.m */; };
+		043383441948A859003819EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043383431948A859003819EB /* AppDelegate.m */; };
+		043383471948A859003819EB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043383461948A859003819EB /* FirstViewController.m */; };
+		0433834A1948A859003819EB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043383491948A859003819EB /* SecondViewController.m */; };
+		0433834D1948A859003819EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0433834B1948A859003819EB /* Main.storyboard */; };
+		0433834F1948A859003819EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0433834E1948A859003819EB /* Images.xcassets */; };
+		0433835B1948A859003819EB /* LogMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433835A1948A859003819EB /* LogMeTests.m */; };
+		043383691948B632003819EB /* LoggingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043383681948B632003819EB /* LoggingController.m */; };
+		0433836E1948D19C003819EB /* WorkLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433836D1948D19C003819EB /* WorkLog.m */; };
+		043383721948DDB5003819EB /* LogViewingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043383711948DDB5003819EB /* LogViewingController.m */; };
+		043C57A7194909D200F80C08 /* AddLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C57A6194909D200F80C08 /* AddLogViewController.m */; };
+		043C57AC1949122200F80C08 /* AddLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C57AB1949122200F80C08 /* AddLogController.m */; };
+		043C57B21949290000F80C08 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C57B11949290000F80C08 /* SettingsViewController.m */; };
+		0479315419494CFB00836120 /* MapSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479315319494CFB00836120 /* MapSearchViewController.m */; };
+		047931561949530A00836120 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047931551949530900836120 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043383551948A859003819EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043383331948A858003819EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0433833A1948A858003819EB;
+			remoteInfo = LogMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041525C2194A0642003FDD7A /* AddClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClientViewController.h; sourceTree = "<group>"; };
+		041525C3194A0642003FDD7A /* AddClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClientViewController.m; sourceTree = "<group>"; };
+		041525C5194A065B003FDD7A /* AddClientPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClientPageController.h; sourceTree = "<group>"; };
+		041525C6194A065B003FDD7A /* AddClientPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClientPageController.m; sourceTree = "<group>"; };
+		041525C8194A0890003FDD7A /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		041525C9194A0890003FDD7A /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		041525CB194A08A2003FDD7A /* ClientList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientList.h; sourceTree = "<group>"; };
+		041525CC194A08A2003FDD7A /* ClientList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientList.m; sourceTree = "<group>"; };
+		041525CE194A08B1003FDD7A /* WorkLogList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkLogList.h; sourceTree = "<group>"; };
+		041525CF194A08B1003FDD7A /* WorkLogList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkLogList.m; sourceTree = "<group>"; };
+		041CB32B194A00D000E72850 /* ClientPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientPageViewController.h; sourceTree = "<group>"; };
+		041CB32C194A00D000E72850 /* ClientPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientPageViewController.m; sourceTree = "<group>"; };
+		041CB32F194A01A000E72850 /* ClientPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientPageController.h; sourceTree = "<group>"; };
+		041CB330194A01A000E72850 /* ClientPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientPageController.m; sourceTree = "<group>"; };
+		0433833B1948A858003819EB /* LogMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0433833F1948A859003819EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043383401948A859003819EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		043383421948A859003819EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		043383431948A859003819EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		043383451948A859003819EB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		043383461948A859003819EB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		043383481948A859003819EB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		043383491948A859003819EB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		0433834C1948A859003819EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0433834E1948A859003819EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		043383541948A859003819EB /* LogMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043383591948A859003819EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0433835A1948A859003819EB /* LogMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogMeTests.m; sourceTree = "<group>"; };
+		043383671948B632003819EB /* LoggingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingController.h; sourceTree = "<group>"; };
+		043383681948B632003819EB /* LoggingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggingController.m; sourceTree = "<group>"; };
+		0433836C1948D19C003819EB /* WorkLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkLog.h; sourceTree = "<group>"; };
+		0433836D1948D19C003819EB /* WorkLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkLog.m; sourceTree = "<group>"; };
+		0433836F1948D5BE003819EB /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		043383701948DDB5003819EB /* LogViewingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewingController.h; sourceTree = "<group>"; };
+		043383711948DDB5003819EB /* LogViewingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewingController.m; sourceTree = "<group>"; };
+		043C57A5194909D200F80C08 /* AddLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLogViewController.h; sourceTree = "<group>"; };
+		043C57A6194909D200F80C08 /* AddLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLogViewController.m; sourceTree = "<group>"; };
+		043C57AA1949122200F80C08 /* AddLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLogController.h; sourceTree = "<group>"; };
+		043C57AB1949122200F80C08 /* AddLogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLogController.m; sourceTree = "<group>"; };
+		043C57B01949290000F80C08 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		043C57B11949290000F80C08 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		0479315219494CFB00836120 /* MapSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchViewController.h; sourceTree = "<group>"; };
+		0479315319494CFB00836120 /* MapSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchViewController.m; sourceTree = "<group>"; };
+		047931551949530900836120 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043383381948A858003819EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047931561949530A00836120 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043383511948A859003819EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041525C1194A0612003FDD7A /* Client Page */ = {
+			isa = PBXGroup;
+			children = (
+				041CB32A194A00B700E72850 /* Additional pages */,
+				041CB32B194A00D000E72850 /* ClientPageViewController.h */,
+				041CB32C194A00D000E72850 /* ClientPageViewController.m */,
+				041525C2194A0642003FDD7A /* AddClientViewController.h */,
+				041525C3194A0642003FDD7A /* AddClientViewController.m */,
+			);
+			name = "Client Page";
+			sourceTree = "<group>";
+		};
+		041CB324194A006900E72850 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				043C57B01949290000F80C08 /* SettingsViewController.h */,
+				043C57B11949290000F80C08 /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		041CB325194A007900E72850 /* Logs Page */ = {
+			isa = PBXGroup;
+			children = (
+				043383481948A859003819EB /* SecondViewController.h */,
+				043383491948A859003819EB /* SecondViewController.m */,
+				043C57A5194909D200F80C08 /* AddLogViewController.h */,
+				043C57A6194909D200F80C08 /* AddLogViewController.m */,
+			);
+			name = "Logs Page";
+			sourceTree = "<group>";
+		};
+		041CB326194A008100E72850 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				043383451948A859003819EB /* FirstViewController.h */,
+				043383461948A859003819EB /* FirstViewController.m */,
+			);
+			name = "Home Page";
+			sourceTree = "<group>";
+		};
+		041CB327194A008C00E72850 /* Logs Page */ = {
+			isa = PBXGroup;
+			children = (
+				043383701948DDB5003819EB /* LogViewingController.h */,
+				043383711948DDB5003819EB /* LogViewingController.m */,
+				043C57AA1949122200F80C08 /* AddLogController.h */,
+				043C57AB1949122200F80C08 /* AddLogController.m */,
+			);
+			name = "Logs Page";
+			sourceTree = "<group>";
+		};
+		041CB328194A009500E72850 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				043383671948B632003819EB /* LoggingController.h */,
+				043383681948B632003819EB /* LoggingController.m */,
+			);
+			name = "Home Page";
+			sourceTree = "<group>";
+		};
+		041CB329194A00A100E72850 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0433836C1948D19C003819EB /* WorkLog.h */,
+				0433836D1948D19C003819EB /* WorkLog.m */,
+				041525C8194A0890003FDD7A /* Client.h */,
+				041525C9194A0890003FDD7A /* Client.m */,
+				041525CB194A08A2003FDD7A /* ClientList.h */,
+				041525CC194A08A2003FDD7A /* ClientList.m */,
+				041525CE194A08B1003FDD7A /* WorkLogList.h */,
+				041525CF194A08B1003FDD7A /* WorkLogList.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		041CB32A194A00B700E72850 /* Additional pages */ = {
+			isa = PBXGroup;
+			children = (
+				0479315219494CFB00836120 /* MapSearchViewController.h */,
+				0479315319494CFB00836120 /* MapSearchViewController.m */,
+			);
+			name = "Additional pages";
+			sourceTree = "<group>";
+		};
+		041CB32E194A018E00E72850 /* Settings Page */ = {
+			isa = PBXGroup;
+			children = (
+				041CB32F194A01A000E72850 /* ClientPageController.h */,
+				041CB330194A01A000E72850 /* ClientPageController.m */,
+				041525C5194A065B003FDD7A /* AddClientPageController.h */,
+				041525C6194A065B003FDD7A /* AddClientPageController.m */,
+			);
+			name = "Settings Page";
+			sourceTree = "<group>";
+		};
+		043383321948A858003819EB = {
+			isa = PBXGroup;
+			children = (
+				047931551949530900836120 /* MapKit.framework */,
+				0433833D1948A858003819EB /* LogMe */,
+				043383571948A859003819EB /* LogMeTests */,
+				0433833C1948A858003819EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0433833C1948A858003819EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0433833B1948A858003819EB /* LogMe.app */,
+				043383541948A859003819EB /* LogMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0433833D1948A858003819EB /* LogMe */ = {
+			isa = PBXGroup;
+			children = (
+				0433836F1948D5BE003819EB /* Constants.h */,
+				0433836A1948B63E003819EB /* Classes */,
+				043383421948A859003819EB /* AppDelegate.h */,
+				043383431948A859003819EB /* AppDelegate.m */,
+				0433836B1948B64B003819EB /* ViewControllers */,
+				0433834B1948A859003819EB /* Main.storyboard */,
+				0433834E1948A859003819EB /* Images.xcassets */,
+				0433833E1948A858003819EB /* Supporting Files */,
+			);
+			path = LogMe;
+			sourceTree = "<group>";
+		};
+		0433833E1948A858003819EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0433833F1948A859003819EB /* Info.plist */,
+				043383401948A859003819EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		043383571948A859003819EB /* LogMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				0433835A1948A859003819EB /* LogMeTests.m */,
+				043383581948A859003819EB /* Supporting Files */,
+			);
+			path = LogMeTests;
+			sourceTree = "<group>";
+		};
+		043383581948A859003819EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				043383591948A859003819EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0433836A1948B63E003819EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				041CB32E194A018E00E72850 /* Settings Page */,
+				041CB329194A00A100E72850 /* Objects */,
+				041CB328194A009500E72850 /* Home Page */,
+				041CB327194A008C00E72850 /* Logs Page */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		0433836B1948B64B003819EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				041525C1194A0612003FDD7A /* Client Page */,
+				041CB326194A008100E72850 /* Home Page */,
+				041CB325194A007900E72850 /* Logs Page */,
+				041CB324194A006900E72850 /* Settings */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0433833A1948A858003819EB /* LogMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0433835E1948A859003819EB /* Build configuration list for PBXNativeTarget "LogMe" */;
+			buildPhases = (
+				043383371948A858003819EB /* Sources */,
+				043383381948A858003819EB /* Frameworks */,
+				043383391948A858003819EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogMe;
+			productName = LogMe;
+			productReference = 0433833B1948A858003819EB /* LogMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		043383531948A859003819EB /* LogMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043383611948A859003819EB /* Build configuration list for PBXNativeTarget "LogMeTests" */;
+			buildPhases = (
+				043383501948A859003819EB /* Sources */,
+				043383511948A859003819EB /* Frameworks */,
+				043383521948A859003819EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043383561948A859003819EB /* PBXTargetDependency */,
+			);
+			name = LogMeTests;
+			productName = LogMeTests;
+			productReference = 043383541948A859003819EB /* LogMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043383331948A858003819EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = JackCable;
+				TargetAttributes = {
+					0433833A1948A858003819EB = {
+						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					043383531948A859003819EB = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 0433833A1948A858003819EB;
+					};
+				};
+			};
+			buildConfigurationList = 043383361948A858003819EB /* Build configuration list for PBXProject "LogMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043383321948A858003819EB;
+			productRefGroup = 0433833C1948A858003819EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0433833A1948A858003819EB /* LogMe */,
+				043383531948A859003819EB /* LogMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043383391948A858003819EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0433834D1948A859003819EB /* Main.storyboard in Resources */,
+				0433834F1948A859003819EB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043383521948A859003819EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043383371948A858003819EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041CB32D194A00D000E72850 /* ClientPageViewController.m in Sources */,
+				041525C4194A0642003FDD7A /* AddClientViewController.m in Sources */,
+				041525CA194A0890003FDD7A /* Client.m in Sources */,
+				0433834A1948A859003819EB /* SecondViewController.m in Sources */,
+				043383691948B632003819EB /* LoggingController.m in Sources */,
+				041525D0194A08B1003FDD7A /* WorkLogList.m in Sources */,
+				043383721948DDB5003819EB /* LogViewingController.m in Sources */,
+				0479315419494CFB00836120 /* MapSearchViewController.m in Sources */,
+				043C57A7194909D200F80C08 /* AddLogViewController.m in Sources */,
+				041525C7194A065B003FDD7A /* AddClientPageController.m in Sources */,
+				043383441948A859003819EB /* AppDelegate.m in Sources */,
+				041CB331194A01A000E72850 /* ClientPageController.m in Sources */,
+				041525CD194A08A2003FDD7A /* ClientList.m in Sources */,
+				043383471948A859003819EB /* FirstViewController.m in Sources */,
+				043C57AC1949122200F80C08 /* AddLogController.m in Sources */,
+				043C57B21949290000F80C08 /* SettingsViewController.m in Sources */,
+				043383411948A859003819EB /* main.m in Sources */,
+				0433836E1948D19C003819EB /* WorkLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043383501948A859003819EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0433835B1948A859003819EB /* LogMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043383561948A859003819EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0433833A1948A858003819EB /* LogMe */;
+			targetProxy = 043383551948A859003819EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0433834B1948A859003819EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0433834C1948A859003819EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0433835C1948A859003819EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0433835D1948A859003819EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0433835F1948A859003819EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LogMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		043383601948A859003819EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LogMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		043383621948A859003819EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LogMe.app/LogMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LogMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		043383631948A859003819EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LogMe.app/LogMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LogMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043383361948A858003819EB /* Build configuration list for PBXProject "LogMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0433835C1948A859003819EB /* Debug */,
+				0433835D1948A859003819EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0433835E1948A859003819EB /* Build configuration list for PBXNativeTarget "LogMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0433835F1948A859003819EB /* Debug */,
+				043383601948A859003819EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043383611948A859003819EB /* Build configuration list for PBXNativeTarget "LogMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043383621948A859003819EB /* Debug */,
+				043383631948A859003819EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043383331948A858003819EB /* Project object */;
+}
