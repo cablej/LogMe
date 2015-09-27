@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@import iAd;
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <ADBannerViewDelegate>
 
 
 @end

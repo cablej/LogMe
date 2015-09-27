@@ -23,4 +23,9 @@
     _clientList = [ClientList loadFromFile:logFile];
 }
 
+-(void) removeClientAtIndex:(int)index {
+    [_clientList.list removeObjectAtIndex:index];
+    [_clientList writeListToFile:logFile];
+}
+
 @end

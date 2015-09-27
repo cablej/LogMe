@@ -13,8 +13,6 @@
 
 @property(strong, nonatomic) NSString *name;
 @property float rate;
-@property float latitude;
-@property float longitude;
 
 @property(strong, nonatomic) WorkLogList *logs;
 

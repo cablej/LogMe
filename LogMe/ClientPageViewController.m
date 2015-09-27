@@ -15,7 +15,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *clientTable;
 @property (strong, nonatomic) IBOutlet UILabel *clientNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *clientRateLabel;
-@property (strong, nonatomic) IBOutlet UILabel *clientLocationLabel;
 
 @end
 
@@ -28,6 +27,10 @@
 
 -(void) viewDidAppear:(BOOL)animated {
     [self refreshClients];
+    
+    ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 115, 320, 50)];
+    adView.delegate = self;
+    [self.view addSubview:adView];
 }
 
 -(void) refreshClients {
@@ -93,8 +96,18 @@
     
     Client *currentClient = controller.clientList.list[indexPath.row];
     _clientNameLabel.text = currentClient.name;
-    _clientRateLabel.text = [NSString stringWithFormat:@"$%f / hr", currentClient.rate];
-    _clientLocationLabel.text = [NSString stringWithFormat:@"(%f, %f)", currentClient.latitude, currentClient.longitude];
+    _clientRateLabel.text = [NSString stringWithFormat:@"$%.2f / hr", currentClient.rate];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [controller removeClientAtIndex:indexPath.row];
+    [self refreshClients];
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    NSLog(@"Failed to retrieve ad");
 }
 
 @end

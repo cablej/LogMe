@@ -13,12 +13,10 @@
 
 @implementation AddClientPageController
 
--(void) addClient:(NSString *)name :(float)wage : (float) latitude : (float) longitude {
+-(void) addClient:(NSString *)name :(float)wage {
     Client *newClient = [[Client alloc] init];
     newClient.name = name;
     newClient.rate = wage;
-    newClient.latitude = latitude;
-    newClient.longitude = longitude;
     ClientList *allClients = [ClientList loadFromFile:logFile];
     [allClients.list addObject:newClient];
     [allClients writeListToFile:logFile];

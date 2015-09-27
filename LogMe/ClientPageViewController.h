@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import iAd;
 
-@interface ClientPageViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ClientPageViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, ADBannerViewDelegate>
 
 @end

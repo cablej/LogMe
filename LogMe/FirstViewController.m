@@ -32,6 +32,10 @@
 -(void) viewDidAppear:(BOOL)animated {
     [_loggingController loadClients];
     if(![_loggingController currentClientIsBeyondBounds]) _clientLabel.text = [NSString stringWithFormat: @"Current client : %@", [_loggingController currentClientName]];
+    
+    ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 65, 320, 50)];
+    adView.delegate = self;
+    [self.view addSubview:adView];
 }
 
 - (IBAction)loggingButtonPressed:(UIButton *)sender {
@@ -66,6 +70,12 @@
     _moneyEarned.text = [_loggingController getFormattedDollarsEarned];
     
     [self performSelector:@selector(updateTimeInterval) withObject:nil afterDelay:1];
+}
+
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    NSLog(@"Failed to retrieve ad");
 }
 
 @end

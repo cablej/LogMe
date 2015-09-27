@@ -10,6 +10,6 @@
 
 @interface AddClientPageController : NSObject
 
--(void) addClient : (NSString*) name : (float) wage : (float) latitude : (float) longitude;
+-(void) addClient : (NSString*) name : (float) wage;
 
 @end

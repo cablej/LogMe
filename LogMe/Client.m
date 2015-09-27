@@ -19,7 +19,7 @@
 }
 
 -(NSArray*) exportRawData {
-    return @[_name, [NSNumber numberWithFloat:_rate], [NSNumber numberWithFloat:_latitude], [NSNumber numberWithFloat:_longitude]];
+    return @[_name, [NSNumber numberWithFloat:_rate]];
 }
 
 @end

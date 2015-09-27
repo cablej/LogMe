@@ -44,9 +44,7 @@
     [self.view endEditing:YES];
     NSString *clientName = _clientNameField.text;
     float hourlyRate = [_hourlyRateField.text floatValue];
-    float latitude = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedLatitude"] floatValue];
-    float longitude = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedLongitude"] floatValue];
-    [controller addClient:clientName :hourlyRate : latitude : longitude];
+    [controller addClient:clientName :hourlyRate];
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 

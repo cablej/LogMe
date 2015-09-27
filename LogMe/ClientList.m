@@ -46,8 +46,6 @@
         Client *newClient = [[Client alloc] init];
         newClient.name = newClientInfoRaw[0];
         newClient.rate = [newClientInfoRaw[1] floatValue];
-        newClient.latitude = [newClientInfoRaw[2] floatValue];
-        newClient.longitude = [newClientInfoRaw[3] floatValue];
         
         for(int i=0; i<newClientLogs.count; i++) {
             NSArray *rawLog = newClientLogs[i];

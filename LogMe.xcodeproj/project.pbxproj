@@ -26,9 +26,7 @@
 		043383721948DDB5003819EB /* LogViewingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043383711948DDB5003819EB /* LogViewingController.m */; };
 		043C57A7194909D200F80C08 /* AddLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C57A6194909D200F80C08 /* AddLogViewController.m */; };
 		043C57AC1949122200F80C08 /* AddLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C57AB1949122200F80C08 /* AddLogController.m */; };
-		043C57B21949290000F80C08 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C57B11949290000F80C08 /* SettingsViewController.m */; };
-		0479315419494CFB00836120 /* MapSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479315319494CFB00836120 /* MapSearchViewController.m */; };
-		047931561949530A00836120 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047931551949530900836120 /* MapKit.framework */; };
+		D1C3F79A1BB779500050FFFE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C3F7991BB779500050FFFE /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,11 +79,7 @@
 		043C57A6194909D200F80C08 /* AddLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLogViewController.m; sourceTree = "<group>"; };
 		043C57AA1949122200F80C08 /* AddLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLogController.h; sourceTree = "<group>"; };
 		043C57AB1949122200F80C08 /* AddLogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLogController.m; sourceTree = "<group>"; };
-		043C57B01949290000F80C08 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		043C57B11949290000F80C08 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		0479315219494CFB00836120 /* MapSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchViewController.h; sourceTree = "<group>"; };
-		0479315319494CFB00836120 /* MapSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchViewController.m; sourceTree = "<group>"; };
-		047931551949530900836120 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D1C3F7991BB779500050FFFE /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047931561949530A00836120 /* MapKit.framework in Frameworks */,
+				D1C3F79A1BB779500050FFFE /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,22 +104,12 @@
 		041525C1194A0612003FDD7A /* Client Page */ = {
 			isa = PBXGroup;
 			children = (
-				041CB32A194A00B700E72850 /* Additional pages */,
 				041CB32B194A00D000E72850 /* ClientPageViewController.h */,
 				041CB32C194A00D000E72850 /* ClientPageViewController.m */,
 				041525C2194A0642003FDD7A /* AddClientViewController.h */,
 				041525C3194A0642003FDD7A /* AddClientViewController.m */,
 			);
 			name = "Client Page";
-			sourceTree = "<group>";
-		};
-		041CB324194A006900E72850 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				043C57B01949290000F80C08 /* SettingsViewController.h */,
-				043C57B11949290000F80C08 /* SettingsViewController.m */,
-			);
-			name = Settings;
 			sourceTree = "<group>";
 		};
 		041CB325194A007900E72850 /* Logs Page */ = {
@@ -183,15 +167,6 @@
 			name = Objects;
 			sourceTree = "<group>";
 		};
-		041CB32A194A00B700E72850 /* Additional pages */ = {
-			isa = PBXGroup;
-			children = (
-				0479315219494CFB00836120 /* MapSearchViewController.h */,
-				0479315319494CFB00836120 /* MapSearchViewController.m */,
-			);
-			name = "Additional pages";
-			sourceTree = "<group>";
-		};
 		041CB32E194A018E00E72850 /* Settings Page */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +181,7 @@
 		043383321948A858003819EB = {
 			isa = PBXGroup;
 			children = (
-				047931551949530900836120 /* MapKit.framework */,
+				D1C3F7991BB779500050FFFE /* iAd.framework */,
 				0433833D1948A858003819EB /* LogMe */,
 				043383571948A859003819EB /* LogMeTests */,
 				0433833C1948A858003819EB /* Products */,
@@ -280,7 +255,6 @@
 				041525C1194A0612003FDD7A /* Client Page */,
 				041CB326194A008100E72850 /* Home Page */,
 				041CB325194A007900E72850 /* Logs Page */,
-				041CB324194A006900E72850 /* Settings */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -399,7 +373,6 @@
 				043383691948B632003819EB /* LoggingController.m in Sources */,
 				041525D0194A08B1003FDD7A /* WorkLogList.m in Sources */,
 				043383721948DDB5003819EB /* LogViewingController.m in Sources */,
-				0479315419494CFB00836120 /* MapSearchViewController.m in Sources */,
 				043C57A7194909D200F80C08 /* AddLogViewController.m in Sources */,
 				041525C7194A065B003FDD7A /* AddClientPageController.m in Sources */,
 				043383441948A859003819EB /* AppDelegate.m in Sources */,
@@ -407,7 +380,6 @@
 				041525CD194A08A2003FDD7A /* ClientList.m in Sources */,
 				043383471948A859003819EB /* FirstViewController.m in Sources */,
 				043C57AC1949122200F80C08 /* AddLogController.m in Sources */,
-				043C57B21949290000F80C08 /* SettingsViewController.m in Sources */,
 				043383411948A859003819EB /* main.m in Sources */,
 				0433836E1948D19C003819EB /* WorkLog.m in Sources */,
 			);
@@ -525,8 +497,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LogMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -536,8 +510,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LogMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

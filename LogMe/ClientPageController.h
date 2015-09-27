@@ -12,6 +12,7 @@
 @interface ClientPageController : NSObject
 
 @property(strong, nonatomic) ClientList *clientList;
+-(void) removeClientAtIndex:(int)index;
 
 -(void) loadClientList;
 
